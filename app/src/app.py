@@ -1,8 +1,10 @@
 from flask import Flask, request
 import requests
 import time
+import sqlite3
 
 app = Flask(__name__)
+conn = sqlite3.connect('netflix.db')
 
 TRACE_HEADERS_TO_PROPAGATE = [ \
     'x-ot-span-context',\
@@ -13,7 +15,7 @@ TRACE_HEADERS_TO_PROPAGATE = [ \
     'X-B3-Sampled',\
     'X-B3-Flags'\
     ]
- 
+
 def set_trace_headers(req):
     headers = {}
     for header in TRACE_HEADERS_TO_PROPAGATE:
