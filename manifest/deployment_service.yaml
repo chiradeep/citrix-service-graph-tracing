@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sales-portal
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 ---
 
 apiVersion: v1
@@ -53,7 +53,7 @@ spec:
     spec:
       containers:
       - name: leads
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 
 ---
 
@@ -91,7 +91,7 @@ spec:
     spec:
       containers:
       - name: opportunities
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 
 ---
 
@@ -129,7 +129,7 @@ spec:
     spec:
       containers:
       - name: product-catalogue
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 
 ---
 
@@ -167,7 +167,7 @@ spec:
     spec:
       containers:
       - name: catalogue-store
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 
 ---
 
@@ -205,7 +205,7 @@ spec:
     spec:
       containers:
       - name: accounts
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 
 ---
 
@@ -243,7 +243,7 @@ spec:
     spec:
       containers:
       - name: payables
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 
 ---
 
@@ -281,7 +281,7 @@ spec:
     spec:
       containers:
       - name: receivables
-        image: docker.io/danny3112/sales-portal
+        image: netflix_app
 
 ---
 
